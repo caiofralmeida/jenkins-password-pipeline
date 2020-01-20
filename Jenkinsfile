@@ -10,6 +10,8 @@ node {
             id: 'userInput', message: 'Put your terraform resource password', parameters: [
             [$class: 'PasswordParameterDefinition', defaultValue: 'rds password', description: 'terraform', name: 'aPassword']
             ])
+
+            echo userInput
         }
     }
 }
